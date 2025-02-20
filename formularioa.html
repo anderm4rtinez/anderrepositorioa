@@ -5,6 +5,45 @@
     <title>Formulario de Contacto</title>
     <link rel="stylesheet" href="probatxoa.css">
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: auto;
+        }
+
+        label {
+            display: block;
+            margin: 8px 0 4px;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
@@ -14,16 +53,11 @@
 
         <label for="emaila">Emaila:</label>
         <input type="email" id="emaila" name="emaila" required placeholder="Sartzazu zure posta elektronikoa">
-
-        <label for="estatua">Estatua:</label>
-        <select id="estatua" name="estatua" required>
-            <option value="estatua">Aukeratu zure herrialdea</option>
-            <option value="Euskal Herria">Euskal Herria</option>
-            <option value="Erresuma Batua">Erresuma Batua</option>
-            <option value="Frantzia">Frantzia</option>
-            <option value="Australia">Australia</option>
-        </select>
-
+        <script>
+        function emaila(email) {
+            return email.includes('@', ".com");
+          }
+        </script>
         <label>Generoa:</label>
         <div class="generoa">
             <input type="radio" id="Gizonezkoa" name="generoa" value="Gizonezkoa" required>
@@ -35,6 +69,15 @@
             <input type="radio" id="Bestebat" name="generoa" value="Bestebat" required>
             <label for="bestebat">Beste Bat</label>
         </div>
+
+        <label for="estatua">Estatua:</label>
+        <select id="estatua" name="estatua" required>
+            <option value="estatua">Aukeratu zure herrialdea</option>
+            <option value="Euskal Herria">Euskal Herria</option>
+            <option value="Erresuma Batua">Erresuma Batua</option>
+            <option value="Frantzia">Frantzia</option>
+            <option value="Australia">Australia</option>
+        </select>
 
         <button type="submit">Bidalia</button>
     </form>
