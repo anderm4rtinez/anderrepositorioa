@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="probatxoa.css">
+    <style></style>
+</head>
+<body>
+    <p id="emaitza"></p>
+    <p id="lortutakoa"></p>
+    <div class="diva"></div>
+    <button id="fondoaa">a</button>
+    <header class="Goiburura">
+        <div class="KarrutaFlex"></div>
+            <div class="Pertsonalizatzailea"></div>
+            <div class="Formularioa"></div>
+            <div class="Irudiak"></div>
+    </div>
+    </header>
+<script>
+    let arrayBat = [3,6,15,43];
+
+    function zenbakiakAldatzen() {
+        document.getElementById("emaitza").innerHTML = arrayBat[2];
+    }
+    zenbakiakAldatzen();
+
+    function proba(zerbait){
+        let biderketa = zerbait * zerbait;
+        document.getElementById("lortutakoa").innerHTML = biderketa;
+    }
+    proba(5);
+
+    function elementuaSortua() {
+        const para = document.createElement("p");
+        para.textContent = "Kaixo Mundua!!";
+        document.getElementById("diva").appendChild(para);
+    }
+    setInterval(elementuaSortua, 1000);
+
+
+    function Fondoa() {
+        document.body.style.backgroundColor = "lightblue";
+    }
+
+
+    document.getElementById("fondoaa").addEventListener("click", fondoa);
+</script>
+
+</body>
+</html>

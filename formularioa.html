@@ -1,0 +1,43 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="probatxoa.css">
+    <style>
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+        <label for="nombre">Izen osoa:</label>
+        <input type="text" id="izenaososa" name="izenosoa" required placeholder="Sartzazu zure izen osoa">
+
+        <label for="emaila">Emaila:</label>
+        <input type="email" id="emaila" name="emaila" required placeholder="Sartzazu zure posta elektronikoa">
+
+        <label for="estatua">Estatua:</label>
+        <select id="estatua" name="estatua" required>
+            <option value="estatua">Aukeratu zure herrialdea</option>
+            <option value="Euskal Herria">Euskal Herria</option>
+            <option value="Erresuma Batua">Erresuma Batua</option>
+            <option value="Frantzia">Frantzia</option>
+            <option value="Australia">Australia</option>
+        </select>
+
+        <label>Generoa:</label>
+        <div class="generoa">
+            <input type="radio" id="Gizonezkoa" name="generoa" value="Gizonezkoa" required>
+            <label for="Gizonezkoa">Gizonezkoa</label>
+
+            <input type="radio" id="Emakumezkoa" name="generoa" value="Emakumezkoa" required>
+            <label for="Emakumezkoa">Emakumezkoa</label>
+
+            <input type="radio" id="Bestebat" name="generoa" value="Bestebat" required>
+            <label for="bestebat">Beste Bat</label>
+        </div>
+
+        <button type="submit">Bidalia</button>
+    </form>
+
+</body>
+</html>
