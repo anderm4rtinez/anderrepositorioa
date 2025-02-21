@@ -19,23 +19,48 @@ function grisaa{
     document.getElementById(taula).style.background = "white"
 }
 function gorria{
-    document.body.style.backgroundColor = "red"
-    document.getElementById(taula).style.background = "white"
+    document.getElementById(Paragrafoa).style.background = "white"
 }
 function berdea{
-    document.body.style.backgroundColor = "green"
-    document.getElementById(taula).style.background = "white"
+    document.getElementById(Paragrafoa).style.background = "white"
 }
 
 function urdina{
-    document.body.style.backgroundColor = "blue"
-    document.getElementById(taula).style.background = "white"
+    document.getElementById(Paragrafoa).style.background = "white"
 }
 function beltza{
-    document.body.style.backgroundColor = "black"
-    document.getElementById(taula).style.background = "white"
+    document.getElementById(Paragrafoa).style.background = "white"
 }
 function txuria{
-    document.body.style.backgroundColor = "white"
-    document.getElementById(taula).style.background = "white"
+    document.getElementById(Paragrafoa).style.background = "white"
+}
+function xs{
+    document.getElementById(Paragrafoa).style.fontsize = "x-small"
+}
+function s{
+    document.getElementById(Paragrafoa).style.fontsize = "small"
+}
+function m{
+    document.getElementById(Paragrafoa).style.fontsize = "medium"
+}
+function l{
+    document.getElementById(Paragrafoa).style.fontsize = "large"
+}
+function xl{
+    document.getElementById(Paragrafoa).style.fontsize = "larger"
+}
+function a{
+    document.getElementById(Paragrafoa).style.fontFamily = "arial"
+}
+function t{
+    document.getElementById(Paragrafoa).style.fontFamily = "times"
+}
+function c{
+    document.getElementById(Paragrafoa).style.fontFamily = "courier"
+}
+function f{
+    document.getElementById(Paragrafoa).style.fontFamily = "fantasy"
+}
+function m{
+    document.getElementById(Paragrafoa).style.fontFamily = "monospace"
 }
