@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumentua</title>
+    <link rel="stylesheet" href="Formularioa.html">
+</head>
+<body class="default">
+  <header class="goiburua">
+    <div class="barrukoFlex">
+        <div class="Pertsonalizatzea"><a href="Pertsonalizazioaa.html">Pertsonalizatzea</a></div>
+        <div class="Formularioa"><a href="Formularioa.html">Formularioa</a></div> 
+        <div class="Irudiak"><a href="Irudiakk.html">Irudiak</a></div>
+        <div class="Modua"><button class="m_botoia" onclick="modua()">Modua</button></div>
+    </div>
+  </header>
+    <div class="formulario-kontainerra">
+
+        <form>
+          <div class="generoa">
+            <label for="name">Izen osoa:</label>
+            <input type="text" id="name" name="name" placeholder="Sartu zure izen osoa">
+          </div>
+    
+          <div class="generoa">
+            <label for="emaila">Emaila:</label>
+            <input type="email" id="emaila" name="emaila" placeholder="Sartu zure emaila">
+          </div>
+
+
+          <button type="button" id="konprobaketa" onclick="konprobaketa()">Onartu</button>
+          <p id="onartu"></p>
+    
+
+          <div class="generoa">
+            <label>Generoa:</label>
+            <div class="generoa">
+                <input type="radio" id="Gizonezkoa" name="generoa" value="Gizonezkoa" required>
+                <label for="Gizonezkoa">Gizonezkoa</label>
+    
+                <input type="radio" id="Emakumezkoa" name="generoa" value="Emakumezkoa" required>
+                <label for="Emakumezkoa">Emakumezkoa</label>
+    
+                <input type="radio" id="Bestebat" name="generoa" value="Bestebat" required>
+                <label for="bestebat">Beste Bat</label>
+            </div>
+          </div>
+
+          <div class="generoa">
+            <label for="estatua">Estatua:</label>
+          <select id="estatua" name="estatua" required>
+              <option value="estatua">Aukeratu zure herrialdea</option>
+              <option value="Euskal Herria">Euskal Herria</option>
+              <option value="Erresuma Batua">Erresuma Batua</option>
+              <option value="Frantzia">Frantzia</option>
+              <option value="Australia">Australia</option>
+            </select>
+          </div>
+    
+
+
+          <div class="formulario-errenkada">
+            <button type="submit" class="submit-btn">Bidali</button>
+          </div>
+        
+        </form>
+
+    </div>
+    <script src="Formularioaa.js"></script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.goiburua{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: black;
+    color: white;
+    z-index: 1000;
+}
+.barrukoFlex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+div a{
+    color: white;
+    text-decoration: none;
+}
+.formulario-kontainerra{
+    width: 80%;
+    margin: auto;
+    max-width: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: rgba(0,0,0,0.1) 0px 2px 4px;
+  }  
+  .formulario-errenkada{
+    display: flex;
+    margin-bottom: 20px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  label{
+    margin-bottom: 5px;
+    font-weight:bolder;
+    padding-bottom: 10px;
+  }
+  input[type="email"]{
+    width: 100%;
+  }
+  input[type="text"]{
+    width: 100%;
+  }
+  input[type="password"]{
+    width: 100%;
+  }
+  #estatua{
+    width: 100%;
+  }
+  button{
+    width: 100%;
+  }
+  .modua_botoia{
+    border: none;
+    background-color: #444;
+    color: white;
+    font-size: medium;
+  }
