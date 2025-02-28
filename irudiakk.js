@@ -25,17 +25,15 @@ function zenbakia(n){
 }
 
 var aldatu_irudia = new Array();
-aldatu_irudia[0] = "irudiak/a.png";
-aldatu_irudia[1] = "irudiak/a.png";
-aldatu_irudia[2] = "irudiak/a.png";
-aldatu_irudia[3] = "irudiak/a.png";
-aldatu_irudia[4] = "irudiak/a.png";
+aldatu_irudia[0] = "irudiak/JavaScrpit-logo.png";
+aldatu_irudia[1] = "irudiak/css-logo.png";
+aldatu_irudia[2] = "irudiak/HTML-logo.png";
 
 function loop() {
-    document.getElementById("aleatorioa").src = aldatu_irudia[zenbakia(5)-1];
+    document.getElementById("aleatorioa").src = aldatu_irudia[zenbakia(3)-1];
     setTimeout(loop, 100);
 }
 
 function aukeratu_irudia(){
-    document.getElementById("aukeratuta").src = aldatu_irudia[zenbakia(5)-1];
+    document.getElementById("aukeratuta").src = aldatu_irudia[zenbakia(3)-1];
 }
